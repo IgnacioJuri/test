@@ -1,0 +1,651 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;1,400&family=Outfit:wght@900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1, h2, h3, h4, p, a, input, textarea {
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+html {
+  background-color: rgb(255, 251, 240);
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: rgb(255, 251, 240);
+}
+
+.mainColor {
+  color: rgb(248, 177, 57);
+}
+
+.redColor {
+  color: rgb(195, 58, 46);
+}
+
+.blueColor {
+  color: rgb(100, 97, 165);
+}
+
+.greenColor {
+  color: rgb(84, 173, 114);
+}
+
+.skyBlueColor {
+  color: rgb(0, 127, 197);
+}
+
+.ver-mas-btn {
+  border-radius: 30px;
+  width: 9em;
+  height: 3em;
+  background-color: rgb(248, 177, 57);
+  color: white;
+  border-color: transparent;
+  font-family: "Outfit", sans-serif;
+}
+
+.ver-mas-btn-1 {
+  border-radius: 30px;
+  width: 9em;
+  height: 3em;
+  background-color: rgb(248, 177, 57);
+  color: white;
+  border-color: transparent;
+  font-family: "Outfit", sans-serif;
+}
+
+.ver-mas-btn-red {
+  border-radius: 30px;
+  width: 9em;
+  height: 3em;
+  background-color: rgb(195, 58, 46);
+  color: white;
+  border-color: transparent;
+  font-family: "Outfit", sans-serif;
+}
+
+.ver-mas-btn-blue {
+  border-radius: 30px;
+  width: 9em;
+  height: 3em;
+  background-color: rgb(100, 97, 165);
+  color: white;
+  border-color: transparent;
+  font-family: "Outfit", sans-serif;
+}
+
+.ver-mas-btn-green {
+  border-radius: 30px;
+  width: 9em;
+  height: 3em;
+  background-color: rgb(84, 173, 114);
+  color: white;
+  border-color: transparent;
+  font-family: "Outfit", sans-serif;
+}
+
+.ver-mas-btn-skyBlue {
+  border-radius: 30px;
+  width: 9em;
+  height: 3em;
+  background-color: rgb(0, 127, 197);
+  color: white;
+  border-color: transparent;
+  font-family: "Outfit", sans-serif;
+}
+
+.ver-mas-btn:hover {
+  background-color: black;
+  color: rgb(248, 177, 57);
+  transition: all 1s;
+}
+
+.ver-mas-btn:not(:hover) {
+  background-color: rgb(248, 177, 57);
+  color: white;
+  transition: all 1s;
+}
+
+.ver-mas-btn-1:hover {
+  background-color: black;
+  color: rgb(248, 177, 57);
+  transition: all 1s;
+}
+
+.ver-mas-btn-1:not(:hover) {
+  background-color: rgb(248, 177, 57);
+  color: white;
+  transition: all 1s;
+}
+
+.ver-mas-btn-red:hover {
+  background-color: black;
+  color: rgb(195, 58, 46);
+  transition: all 1s;
+}
+
+.ver-mas-btn-red:not(:hover) {
+  background-color: rgb(195, 58, 46);
+  color: white;
+  transition: all 1s;
+}
+
+.ver-mas-btn-blue:hover {
+  background-color: black;
+  color: rgb(100, 97, 165);
+  transition: all 1s;
+}
+
+.ver-mas-btn-blue:not(:hover) {
+  background-color: rgb(100, 97, 165);
+  color: white;
+  transition: all 1s;
+}
+
+.ver-mas-btn-green:hover {
+  background-color: black;
+  color: rgb(84, 173, 114);
+  transition: all 1s;
+}
+
+.ver-mas-btn-green:not(:hover) {
+  background-color: rgb(84, 173, 114);
+  color: white;
+  transition: all 1s;
+}
+
+.ver-mas-btn-skyBlue:hover {
+  background-color: black;
+  color: rgb(0, 127, 197);
+  transition: all 1s;
+}
+
+.ver-mas-btn-skyBlue:not(:hover) {
+  background-color: rgb(0, 127, 197);
+  color: white;
+  transition: all 1s;
+}
+
+.zoom:hover {
+  transform: scale(1.1);
+  transition: all 1s;
+}
+
+.zoom:not(hover) {
+  transform: scale(1);
+  transition: all 1s;
+}
+
+@media (max-width: 1000px) {
+  .zoom:hover {
+    transform: scale(1);
+    transition: all;
+  }
+}
+.Color-h:hover {
+  color: rgb(248, 177, 57);
+  transition: all 1s;
+}
+
+.Color-h:not(hover) {
+  transition: all 1s;
+}
+
+.Color-h-red:hover {
+  color: rgb(195, 58, 46);
+  transition: all 1s;
+}
+
+.Color-h:not(hover) {
+  transition: all 1s;
+}
+
+.Color-h-blue:hover {
+  color: rgb(100, 97, 165);
+  transition: all 1s;
+}
+
+.Color-h-blue:not(hover) {
+  transition: all 1s;
+}
+
+.Color-h-green:hover {
+  color: rgb(84, 173, 114);
+  transition: all 1s;
+}
+
+.Color-h-green:not(hover) {
+  transition: all 1s;
+}
+
+.Color-h-skyBlue:hover {
+  color: rgb(0, 127, 197);
+  transition: all 1s;
+}
+
+.Color-h-skyBlue:not(hover) {
+  transition: all 1s;
+}
+
+@media (max-width: 1000px) {
+  .Color-h:hover {
+    color: black;
+  }
+  .Color-h-red:hover {
+    color: black;
+  }
+  .Color-h-blue:hover {
+    color: black;
+  }
+  .Color-h-green:hover {
+    color: black;
+  }
+}
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgb(248, 177, 57);
+  border-radius: 30px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: rgb(255, 251, 240);
+}
+
+.main-header {
+  background-color: rgb(255, 251, 240);
+  margin: 0;
+  margin-top: -5rem;
+}
+.main-header video {
+  width: 100%;
+}
+
+.header-mobile {
+  display: none;
+  height: 100%;
+  margin-bottom: 2rem;
+}
+.header-mobile img {
+  width: 100%;
+}
+
+.main-body {
+  margin: 3rem;
+  margin-top: 0;
+}
+
+.product-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+}
+
+.product-container-reverse {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+}
+
+.product-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem;
+  width: 100%;
+}
+.product-info h1 {
+  font-family: "Outfit", sans-serif;
+  font-size: 4.5em;
+  letter-spacing: -0.005em;
+  line-height: 1em;
+}
+.product-info h2 {
+  font-family: "Outfit", sans-serif;
+  font-size: 4.5em;
+  letter-spacing: -0.005em;
+  line-height: 1em;
+}
+.product-info h3 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.5em;
+  font-weight: 400;
+}
+
+.product-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+.product-img img {
+  width: 100%;
+}
+
+@media (max-width: 1000px) {
+  .product-info {
+    gap: 1rem;
+  }
+  .product-info h1 {
+    font-size: 4rem;
+  }
+  .product-info h3 {
+    font-size: 1.25rem;
+  }
+  .product-container {
+    margin-bottom: 4rem;
+  }
+  .product-container-reverse {
+    margin-bottom: 4rem;
+  }
+}
+@media (max-width: 700px) {
+  .main-header {
+    display: block;
+  }
+  .product-container-reverse {
+    display: flex;
+    flex-direction: column-reverse;
+    margin-bottom: 3rem;
+  }
+  .product-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .product-info {
+    align-items: center;
+  }
+  .product-info h1 {
+    font-size: 4.5rem;
+    text-align: center;
+  }
+  .product-info h2 {
+    font-size: 4.5rem;
+    text-align: center;
+  }
+  .product-info h3 {
+    text-align: center;
+  }
+  .product-img {
+    margin-top: 1.5rem;
+  }
+  .product-img img {
+    max-width: 500px;
+  }
+  .img-2 img {
+    display: none;
+  }
+  .img-4 img {
+    display: none;
+  }
+}
+@media (max-width: 650px) {
+  .main-header {
+    display: none;
+  }
+  .header-mobile {
+    display: block;
+  }
+}
+@media (max-width: 438px) {
+  .product-info h1 {
+    font-size: 3.75rem;
+  }
+  .product-info h2 {
+    font-size: 3.75rem;
+  }
+}
+.img-2 {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 5rem;
+}
+.img-2 img {
+  opacity: 0%;
+  width: 70%;
+}
+
+.img-2:hover img {
+  opacity: 100%;
+  transition: all 0.5s;
+}
+
+.img-2:not(hover) img {
+  opacity: 0%;
+  transition: all 0.5s;
+}
+
+.img-4 {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 5rem;
+}
+.img-4 img {
+  opacity: 0%;
+  width: 70%;
+}
+
+.img-4:hover img {
+  opacity: 100%;
+  transition: all 0.5s;
+}
+
+.img-4:not(hover) img {
+  opacity: 0%;
+  transition: all 0.5s;
+}
+
+.hide {
+  opacity: 0%;
+  transition: all 0.5s;
+}
+
+.no-hide {
+  opacity: 100%;
+  transition: all 0.5s;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 10vh;
+  width: 100%;
+  background-color: aqua;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+}
+
+.pag {
+  height: 90vh;
+  background-color: rgb(255, 251, 240);
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 3rem;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.info h1 {
+  font-family: "Outfit", sans-serif;
+  font-size: 2.5em;
+  letter-spacing: -0.005em;
+  line-height: 1em;
+  text-align: center;
+}
+.info h2 {
+  font-family: "Outfit", sans-serif;
+  font-size: 2.5em;
+  letter-spacing: -0.005em;
+  line-height: 1em;
+  text-align: center;
+}
+.info h3 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.2em;
+  font-weight: 400;
+  padding: 1rem;
+  text-align: center;
+}
+
+.img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.img img {
+  width: 80%;
+}
+
+.footer-top {
+  background-image: url(../img/marca/footer/Contacto\ -\ Web-06.svg);
+  background-size: 100%;
+  background-size: 240vh;
+  height: 50%;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+}
+.footer-top a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 5rem;
+}
+.footer-top a p {
+  font-family: "Outfit", sans-serif;
+  font-size: 1.5em;
+  font-weight: 400;
+}
+.footer-top a img {
+  width: 60%;
+}
+
+.footer-bottom {
+  height: 15rem;
+  width: 100%;
+  background-color: rgb(26, 26, 26);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.footer-bottom div:first-child {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 50%;
+}
+.footer-bottom div:first-child p {
+  font-family: "Outfit", sans-serif;
+  font-size: 1em;
+  font-weight: 200;
+  color: rgb(255, 251, 240);
+}
+
+.footer-bottom div:nth-child(2) {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+}
+.footer-bottom div:nth-child(2) p {
+  font-family: "Outfit", sans-serif;
+  font-size: 1.5em;
+  font-weight: 200;
+  color: rgb(255, 251, 240);
+}
+.footer-bottom div:nth-child(2) div {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-end;
+}
+.footer-bottom div:nth-child(2) div img {
+  width: 50px;
+}
+
+.slider-footer {
+  width: 100%;
+  height: auto;
+  border-top: 5px solid black;
+  border-bottom: 5px solid black;
+  background-color: rgb(255, 251, 240);
+  margin-bottom: 3rem;
+  overflow: hidden;
+}
+.slider-footer p {
+  font-family: "Outfit", sans-serif;
+  font-size: 2em;
+  letter-spacing: -0.005em;
+  line-height: 1em;
+}
+
+@media (max-width: 919px) {
+  .footer-top {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    background-size: 900vh;
+  }
+}
+@media (max-width: 596px) {
+  .footer-top {
+    background-size: 800vh;
+  }
+  .footer-bottom div:first-child {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 80%;
+  }
+  .footer-bottom div:first-child p {
+    font-family: "Outfit", sans-serif;
+    font-size: 1em;
+    font-weight: 200;
+    color: rgb(255, 251, 240);
+  }
+}
+@media (max-width: 540px) {
+  .footer-bottom {
+    flex-direction: column;
+    height: 20rem;
+    width: 100%;
+    margin-bottom: 0;
+  }
+}
+.no-key {
+  font-family: "Montserrat", sans-serif;
+}/*# sourceMappingURL=main.css.map */
