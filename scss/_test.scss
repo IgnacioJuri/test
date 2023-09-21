@@ -1,23 +1,77 @@
-.nav{
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    height: 10vh;
-    width: 100%;
-    background-color: aqua;
+
+.head-nav{
     position: sticky;
     top: 0;
     z-index: 2;
+}
+
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    height: 10vh;
+    width: 100%;
+    background-color: $navBackgroundColor;
+    div{
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-right: 1rem;
+        svg{
+            position: absolute;
+            
+        }
+    }
+    a{
+        width: auto;
+        height: 100%;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        img{
+            width: 70%;
+            max-width: 250px;
+        } 
+    } 
+}
+
+.hidden-nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: $navBackgroundColor;
+    gap: 1rem;
+    display: none;
+    position: absolute;
+    width: 100%;
+    
+    z-index: 2;
+    p{
+        font-family: $mainFont;
+        font-size: 1.5rem;
+        letter-spacing: -0.005em;
+        line-height: 1em;
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+}
+
+#x {
+    display: none;
 }
 
 .pag{
     height: 90vh;
     background-color: $backgroundColor;
     display: flex;
-    justify-content: start;
+    justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin-bottom: 3rem;
+    margin-top: 1rem;
 }
 
 .info{
@@ -54,5 +108,82 @@
     justify-content: center;
     img{
         width: 80%;
+        max-width: 400px;
+    }
+}
+
+@media (min-width:200px){
+   .head-nav{
+    display: block;
+   }
+   .nav-pc{
+    display: none;
+   }
+}
+
+// Breackpoint 540px
+
+@media (min-width: 540px){
+    .info{
+        h1{
+            font-size: 4.5rem;
+        }
+        h2{
+            font-size: 4.5rem;
+        }
+        h3{
+            font-size: 1.5rem;
+        }
+    }
+    .img{
+        img{
+            max-width: 600px;
+        }
+    }
+    .nav{
+        a{
+            img{
+                max-width: 400px;
+            }
+        }
+    }
+}
+
+// Breackpoint 1000px
+
+@media (min-width: 1000px){
+    .pag{
+        flex-direction: row;
+        margin-top: 0;
+        padding: 3rem;
+    }
+    .info{
+        width: 50%;
+        align-items: start;
+        gap: 1rem;
+        h1{
+            text-align: start;
+            font-size: 4.5rem;
+        }
+        h2{
+            text-align: start;
+            font-size: 4.5rem;
+        }
+        h3{
+            text-align: start;
+            font-size: 1.5rem;
+            padding: 0;
+        }
+        button{
+            width: 10rem;
+            height: 3rem;
+            font-size: 1rem;
+        }
+    }
+    .img{
+        width: 50%;
+        img{
+            max-width: 700px;
+        }
     }
 }
