@@ -1,0 +1,21 @@
+
+body div {
+    height: 100vh;
+    scroll-behavior: smooth;
+}
+
+#seccion1{
+    background-color: aqua;
+}
+
+#seccion2{
+    background-color: red;
+}
+
+#seccion3{
+    background-color: greenyellow;
+}
+
+#seccion4{
+    background-color: blue;
+}
