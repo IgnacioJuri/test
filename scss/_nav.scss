@@ -1,0 +1,103 @@
+// Mobile Navbar
+
+.head-nav{
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    height: 10vh;
+    width: 100%;
+    background-color: $navBackgroundColor;
+    div{
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-right: 1rem;
+        svg{
+            position: absolute;
+            
+        }
+    }
+    a{
+        width: auto;
+        height: 100%;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        img{
+            width: 70%;
+            max-width: 250px;
+        } 
+    } 
+}
+
+.hidden-nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: $navBackgroundColor;
+    gap: 1rem;
+    display: none;
+    position: absolute;
+    width: 100%;
+    
+    z-index: 2;
+    p{
+        font-family: $mainFont;
+        font-size: 1.5rem;
+        letter-spacing: -0.005em;
+        line-height: 1em;
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+}
+
+#x {
+    display: none;
+}
+
+// Pc / Tablet Navbar
+
+.pc-nav{
+    position: sticky;
+    background-color: $navBackgroundColor;
+    top: 0;
+    z-index: 2;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 10vh;
+    img{
+        width: 80%;
+    }
+    a{
+        display: flex;
+        justify-content: center;
+        font-size: 1.6rem;
+        font-family: $mainFont;
+    }
+}
+
+// Breackpoint Navbar
+
+@media (min-width: 1000px){
+    .head-nav{
+        display: none;
+    }
+}
+
+@media (max-width: 999px){
+    .pc-nav{
+        display: none;
+    }
+}

@@ -269,203 +269,6 @@ body {
   background-color: rgb(255, 251, 240);
 }
 
-.main-header {
-  background-color: rgb(255, 251, 240);
-  margin: 0;
-  margin-top: -5rem;
-}
-.main-header video {
-  width: 100%;
-}
-
-.header-mobile {
-  display: none;
-  height: 100%;
-  margin-bottom: 2rem;
-}
-.header-mobile img {
-  width: 100%;
-}
-
-.main-body {
-  margin: 3rem;
-  margin-top: 0;
-}
-
-.product-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr;
-}
-
-.product-container-reverse {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr;
-}
-
-.product-info {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 2rem;
-  width: 100%;
-}
-.product-info h1 {
-  font-family: "Outfit", sans-serif;
-  font-size: 4.5em;
-  letter-spacing: -0.005em;
-  line-height: 1em;
-}
-.product-info h2 {
-  font-family: "Outfit", sans-serif;
-  font-size: 4.5em;
-  letter-spacing: -0.005em;
-  line-height: 1em;
-}
-.product-info h3 {
-  font-family: "Montserrat", sans-serif;
-  font-size: 1.5em;
-  font-weight: 400;
-}
-
-.product-img {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden;
-}
-.product-img img {
-  width: 100%;
-}
-
-@media (max-width: 1000px) {
-  .product-info {
-    gap: 1rem;
-  }
-  .product-info h1 {
-    font-size: 4rem;
-  }
-  .product-info h3 {
-    font-size: 1.25rem;
-  }
-  .product-container {
-    margin-bottom: 4rem;
-  }
-  .product-container-reverse {
-    margin-bottom: 4rem;
-  }
-}
-@media (max-width: 700px) {
-  .main-header {
-    display: block;
-  }
-  .product-container-reverse {
-    display: flex;
-    flex-direction: column-reverse;
-    margin-bottom: 3rem;
-  }
-  .product-container {
-    display: flex;
-    flex-direction: column;
-  }
-  .product-info {
-    align-items: center;
-  }
-  .product-info h1 {
-    font-size: 4.5rem;
-    text-align: center;
-  }
-  .product-info h2 {
-    font-size: 4.5rem;
-    text-align: center;
-  }
-  .product-info h3 {
-    text-align: center;
-  }
-  .product-img {
-    margin-top: 1.5rem;
-  }
-  .product-img img {
-    max-width: 500px;
-  }
-  .img-2 img {
-    display: none;
-  }
-  .img-4 img {
-    display: none;
-  }
-}
-@media (max-width: 650px) {
-  .main-header {
-    display: none;
-  }
-  .header-mobile {
-    display: block;
-  }
-}
-@media (max-width: 438px) {
-  .product-info h1 {
-    font-size: 3.75rem;
-  }
-  .product-info h2 {
-    font-size: 3.75rem;
-  }
-}
-.img-2 {
-  position: absolute;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding-bottom: 5rem;
-}
-.img-2 img {
-  opacity: 0%;
-  width: 70%;
-}
-
-.img-2:hover img {
-  opacity: 100%;
-  transition: all 0.5s;
-}
-
-.img-2:not(hover) img {
-  opacity: 0%;
-  transition: all 0.5s;
-}
-
-.img-4 {
-  position: absolute;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding-bottom: 5rem;
-}
-.img-4 img {
-  opacity: 0%;
-  width: 70%;
-}
-
-.img-4:hover img {
-  opacity: 100%;
-  transition: all 0.5s;
-}
-
-.img-4:not(hover) img {
-  opacity: 0%;
-  transition: all 0.5s;
-}
-
-.hide {
-  opacity: 0%;
-  transition: all 0.5s;
-}
-
-.no-hide {
-  opacity: 100%;
-  transition: all 0.5s;
-}
-
 .head-nav {
   position: sticky;
   top: 0;
@@ -529,7 +332,66 @@ body {
   display: none;
 }
 
+.pc-nav {
+  position: sticky;
+  background-color: rgba(255, 251, 240, 0.856);
+  top: 0;
+  z-index: 2;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 10vh;
+}
+.pc-nav img {
+  width: 80%;
+}
+.pc-nav a {
+  display: flex;
+  justify-content: center;
+  font-size: 1.6rem;
+  font-family: "Outfit", sans-serif;
+}
+
+@media (min-width: 1000px) {
+  .head-nav {
+    display: none;
+  }
+}
+@media (max-width: 999px) {
+  .pc-nav {
+    display: none;
+  }
+}
+.header-pc {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.header-pc video {
+  width: 90%;
+}
+
+.header-mobile {
+  margin-bottom: 5rem;
+  width: 100%;
+}
+.header-mobile img {
+  width: 100%;
+}
+
 .pag {
+  height: 90vh;
+  background-color: rgb(255, 251, 240);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 1rem;
+}
+
+.pag-reverse {
   height: 90vh;
   background-color: rgb(255, 251, 240);
   display: flex;
@@ -577,11 +439,8 @@ body {
   max-width: 400px;
 }
 
-@media (min-width: 200px) {
-  .head-nav {
-    display: block;
-  }
-  .nav-pc {
+@media (max-width: 999px) {
+  .header-pc {
     display: none;
   }
 }
@@ -605,6 +464,11 @@ body {
 @media (min-width: 1000px) {
   .pag {
     flex-direction: row;
+    margin-top: 0;
+    padding: 3rem;
+  }
+  .pag-reverse {
+    flex-direction: row-reverse;
     margin-top: 0;
     padding: 3rem;
   }
@@ -636,6 +500,9 @@ body {
   }
   .img img {
     max-width: 700px;
+  }
+  .header-mobile {
+    display: none;
   }
 }
 .footer-top {
