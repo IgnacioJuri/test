@@ -3,7 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="author" content="Ignacio Juri">
+    <meta name="keywords" content="Mestizo, Hummus, Garbanzo, Picante, Ajo Negro, clasico, vegano, natural, argentina, tienda, comprar, libre de gluten, sin TACC, ingredientes naturales, sin conservantes, legumbres, conservas, hummus en conserva">
+    <meta name="copyright" content=" Mestizo Hummus SRL 2023">
+    <meta name="robots" content="index,follow">
+    <meta name="description" content="Hummus Mestizo. Ingredientes 100% naturales, libre de gluten y listo para mezclar con lo que quieras.">
+    <title>MESTIZO HUMMUS - Pura Mezcla</title>
+    <link rel="shortcut icon" href="img/marca/icono-Mestizo.webp" type="image/x-icon">
     <link rel="stylesheet" href="css/main.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
@@ -12,7 +18,7 @@
     <header data-aos="fade-down" data-aos-once="true" class="head-nav">
         <nav class="nav">
             <a href="index.html">
-                <img src="img/marca/Identidad-Mestizo-01.svg" alt="">
+                <img src="img/marca/Identidad-Mestizo-01.svg" alt="Logo Mestizo Hummus">
             </a>
             <div id="nav-icon">
                 <svg id="menu" xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-menu-2" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
@@ -30,18 +36,18 @@
         </nav>
 
         <nav id="hidden-nav" class="hidden-nav">
-            <p>PRODUCTOS</p>
-            <p>TIENDA</p>
+            <p><a href="pages/productos.html">PRODUCTOS</a></p>
+            <p><a href="https://www.mestizohummus.com.ar/nuestros-productos" target="_blank">TIENDA</a></p>
         </nav>
     </header>
 
     <!-- Pc / Tablet Navbar -->
     <header class="pc-nav" data-aos="fade-down" data-aos-once="true">
-        <a href="#">PRODUCTOS</a>
+        <a class="Color-h" href="pages/productos.html">PRODUCTOS</a>
         <a href="index.html">
-            <img src="img/marca/Identidad-Mestizo-01.svg" alt="">
+            <img class="zoom" src="img/marca/Identidad-Mestizo-01.svg" alt="Logo Mestizo Hummus">
         </a>
-        <a href="#">TIENDA</a>
+        <a class="Color-h" href="https://www.mestizohummus.com.ar/nuestros-productos" target="_blank">TIENDA</a>
     </header>
 
     <!-- Pc / Tablet Banner -->
@@ -51,26 +57,31 @@
 
     <!-- mobile Banner -->
     <header class="header-mobile" data-aos="zoom-in-down" data-aos-once="true">
-        <img src="img/Mestizo-Web-Banner-Mobile-2-01.png" alt="">
+        <img src="img/Mestizo-Web-Banner-Mobile-2-01.png" alt="Banner De Mestizo Hummus, Mestizo Hummus con lo que quieras">
     </header>
     <main id="main">
 
         <section class="pag">
 
-            <section class="info" id="1">
+            <section class="info">
                 <h1  data-aos="zoom-in-up">
                     HUMUS<br><span class="mainColor">CLÁSICO</span>
                 </h1>
                 <h3 data-aos="zoom-in-up">
                     Clásico, sí. Pero fuera de lo común. Con una textura que te deja cantando onda: suave, suave, suave, bien suave (¿lo tenés al tema?) y un sabor que le queda bien a lo que se te ocurra. Y si no se te ocurre nada, lo bueno es que a cucharadas sigue siendo un hit.
                 </h3>
-                <button data-aos="zoom-in-up" class="ver-mas-btn">
-                    VER MÁS
-                </button>
+                <a href="pages/clasico.html" data-aos="zoom-in-up">
+                    <button class="ver-mas-btn">
+                        VER MÁS
+                    </button>
+                </a>
             </section>
 
             <section class="img">
-                <img data-aos="zoom-in-up" src="img/clasico/Mestizo-Frasco-Clasico.webp" alt="">
+                <img class="img-1" data-aos="zoom-in-up" src="img/clasico/Mestizo-Frasco-Clasico.webp" alt="imagen de frasco de Hummus Mestizo sabor Clásico">
+                <div class="img-centrada">
+                    <img class="img-2" src="img/clasico/Mestizo-Arte-Original.webp" alt="imagen artistica de Hummus Mestizo sabor Clásico">
+                </div>
             </section>
 
         </section>
@@ -84,13 +95,18 @@
                 <h3 data-aos="zoom-in-up">
                     Hablás de este hummus y se te pianta un lagrimón. Quizás sea por la emoción de encontrar algo que te encanta, o por el picante ¿quién sabe? Pero de lo que sí podemos estar seguros, es que este sabor es un fuego.
                 </h3>
-                <button data-aos="zoom-in-up" class="ver-mas-btn-red">
-                    VER MÁS
-                </button>
+                <a href="pages/picante.html" data-aos="zoom-in-up">
+                    <button class="ver-mas-btn-red">
+                        VER MÁS
+                    </button>
+                </a>
             </section>
 
             <section class="img">
-                <img data-aos="zoom-in-up" src="img/picante/Mestizo-Frasco-AjiPicante.webp" alt="">
+                <img class="img-3" data-aos="zoom-in-up" src="img/picante/Mestizo-Frasco-AjiPicante.webp" alt="imagen de frasco de Hummus Mestizo sabor Picante">
+                <div class="img-centrada">
+                    <img class="img-4" src="img/picante/Mestizo-Arte-aji-picante.webp" alt="imagen artistica de Hummus Mestizo sabor Picante">
+                </div>
             </section>
 
         </section>
@@ -104,13 +120,18 @@
                 <h3 data-aos="zoom-in-up">
                     Un hummus definitivamente etzótico. Como la palabra exótico, que por cierto, le queda mucho mejor que raro. Porque darle un toque japo a una receta de medio oriente puede ser peculiar, pero raro, raro sería que no hagamos un gusto así: etzótico.
                 </h3>
-                <button data-aos="zoom-in-up" class="ver-mas-btn-blue">
-                    VER MÁS
-                </button>
+                <a href="pages/ajoNegro.html" data-aos="zoom-in-up">
+                    <button class="ver-mas-btn-blue">
+                        VER MÁS
+                    </button>
+                </a>
             </section>
 
             <section class="img">
-                <img data-aos="zoom-in-up" src="img/ajo-negro/MESTIZO HUMMUS ALTA-ajo negro.webp" alt="">
+                <img class="img-1" data-aos="zoom-in-up" src="img/ajo-negro/MESTIZO HUMMUS ALTA-ajo negro.webp" alt="imagen de frasco de Hummus Mestizo sabor ajo Negro">
+                <div class="img-centrada">
+                    <img class="img-2" src="img/ajo-negro/Mestizo-Arte-ajo-negro.webp" alt="imagen artistica de  Hummus Mestizo sabor Ajo Negro">
+                </div>
             </section>
 
         </section>
@@ -124,13 +145,18 @@
                 <h3 data-aos="zoom-in-up">
                     Estar verde habla de inmadurez. Y vaya que es de inmaduro tirar fruta con los sabores; o como en este caso, fruto seco. Porque puede fallar decía Tusam, pero esta vez salió el truco. Y ahí nomás gritaron quiero retruco; ¡quiero vale cuatro carajo! Y yo quiero, porque este sabor el ancho de espadas.
                 </h3>
-                <button data-aos="zoom-in-up" class="ver-mas-btn-green">
-                    VER MÁS
-                </button>
+                <a href="pages/pistacho.html" data-aos="zoom-in-up">
+                    <button class="ver-mas-btn-green">
+                        VER MÁS
+                    </button>
+                </a>
             </section>
 
             <section class="img">
-                <img data-aos="zoom-in-up" src="img/pistacho/Mestizo-frasco-pistacho.webp" alt="">
+                <img class="img-3" data-aos="zoom-in-up" src="img/pistacho/Mestizo-frasco-pistacho.webp" alt="imagen de frasco de Hummus Mestizo sabor Pistacho">
+                <div class="img-centrada">
+                    <img class="img-4" src="img/pistacho/Mestizo-Arte-Pistacho.webp" alt="imagen artistica de  Hummus Mestizo sabor Pistacho">
+                </div>
             </section>
 
         </section>
@@ -144,18 +170,22 @@
                 <h3 data-aos="zoom-in-up">
                     Una Pasta bien Posta. 100% hecha con sésamo blanco tostado, para que tomes la posta, o sí te gusta de otro modo; agarres la pasta, y te pongas a hacer todo tipo de comidas. Porque la posta también, es que no es solo para el hummus.
                 </h3>
-                <button data-aos="zoom-in-up" class="ver-mas-btn-skyBlue">
-                    VER MÁS
-                </button>
+                <a href="pages/tahini.html" data-aos="zoom-in-up">
+                    <button class="ver-mas-btn-skyBlue">
+                        VER MÁS
+                    </button>
+                </a>
             </section>
 
             <section class="img">
-                <img data-aos="zoom-in-up" src="img/tahini/Mestizo-frasco-tahini.webp" alt="">
+                <img class="img-1" data-aos="zoom-in-up" src="img/tahini/Mestizo-frasco-tahini.webp" alt="imagen de frasco de Hummus Mestizo sabor Tahini">
+                <div class="img-centrada">
+                    <img class="img-2" src="img/tahini/Mestizo-Arte-Tahini.webp" alt="imagen artistica de  Hummus Mestizo sabor tahini">
+                </div>
             </section>
 
         </section>
     </main>
-
 
     <footer data-aos="fade-up" data-aos-once="true" class="main-footer">
         

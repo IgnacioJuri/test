@@ -136,11 +136,6 @@
             font-size: 1.5rem;
             padding: 0;
         }
-        button{
-            width: 10rem;
-            height: 3rem;
-            font-size: 1rem;
-        }
     }
     .img{
         width: 50%;
@@ -151,4 +146,25 @@
     .header-mobile{
         display: none;
     }
+}
+
+.img-centrada{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 5rem;
+    img{
+        width: 65%;
+    }
+}
+
+.img-2{
+    opacity: 0%;
+    transition: all 1s;
+}
+
+.img-4{
+    opacity: 0%;
+    transition: all 1s;
 }

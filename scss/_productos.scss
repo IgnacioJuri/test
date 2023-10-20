@@ -1,0 +1,118 @@
+.productos-tit{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    overflow: hidden;
+    margin-top: 1rem;
+    header{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        img{
+            width: 90%;
+        }
+    }
+    h3{
+        font-family: $secondaryFont;
+        font-size: 1.2em;
+        font-weight: 400;
+        display: flex;
+        text-align: center;
+        margin-top: 2rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+}
+
+.productos-filtros{
+    width: 100%;
+    height: auto;
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-top: 5px solid black;
+    border-bottom: 5px solid black;
+    padding: 1rem;
+    background-color: white;
+    gap: .5rem;
+    p{
+        font-family: $mainFont;
+        font-size: 2em;
+        letter-spacing: -0.005em;
+        line-height: 1em;
+    }
+}
+
+.product-container{
+    display: grid;
+    grid-template-columns:  1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr ;
+    gap: 2rem;
+    row-gap: 2rem;
+    padding: 3rem;
+    div{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        img{
+            width: 90%;
+        }
+        h2{
+            font-family: $mainFont;
+            font-size: 1.2em;
+            letter-spacing: -0.005em;
+            line-height: 1em; 
+            text-align: center;
+        }
+    }
+}
+
+// breackpoint 1000px
+
+@media (min-width: 1000px){
+    .productos-tit{
+        margin-top: 4rem;
+        margin-bottom: 1rem;
+        header{
+            img{
+                width: 45%;
+            }
+        }
+        h3{
+            width: 60%;
+            font-size: 1.25rem;
+        }
+    }
+
+    .product-container{
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr ;
+    }
+
+    .productos-filtros{
+        justify-content: space-around;
+        flex-direction: row;
+        p{
+            cursor: pointer;
+        }
+
+        p:hover{
+            color: $mainColor;
+            transition: all 0.5s;
+        }
+
+        p:not(hover){
+            transition: all 1s;
+        }
+    }
+}
+
+
+//////////////////////////////////
+
