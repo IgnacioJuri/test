@@ -460,6 +460,14 @@ body {
   max-width: 400px;
 }
 
+.img-2 {
+  display: none;
+}
+
+.img-4 {
+  display: none;
+}
+
 @media (max-width: 999px) {
   .header-pc {
     display: none;
@@ -847,7 +855,7 @@ body {
 }
 .productos-filtros p {
   font-family: "Outfit", sans-serif;
-  font-size: 2em;
+  font-size: 1.4em;
   letter-spacing: -0.005em;
   line-height: 1em;
 }
@@ -899,6 +907,7 @@ body {
   }
   .productos-filtros p {
     cursor: pointer;
+    font-size: 2em;
   }
   .productos-filtros p:hover {
     color: rgb(248, 177, 57);
