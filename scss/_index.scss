@@ -72,13 +72,17 @@
     }
 }
 
-.img-2{
-    display: none;
+@media(max-width:1000px){
+    
+    .img-2{
+        display: none;
+    }
+
+    .img-4{
+        display: none;
+    }
 }
 
-.img-4{
-    display: none;
-}
 
 // Breackpoint 540px
 @media (max-width:999px){
